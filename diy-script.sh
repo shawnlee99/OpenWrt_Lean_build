@@ -104,6 +104,7 @@ sed -i "s/${orig_version}/R${date_version} by Haiibo/g" package/lean/default-set
 
 # 修复 hostapd 报错
 cp -f $GITHUB_WORKSPACE/scripts/011-fix-mbo-modules-build.patch package/network/services/hostapd/patches/011-fix-mbo-modules-build.patch
+ls package/network/services/hostapd/patches/
 rm package/network/services/hostapd/patches/993-fix-mbo-module-build.patch
 
 # 修复 armv8 设备 xfsprogs 报错
